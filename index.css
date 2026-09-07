@@ -390,7 +390,10 @@ section {
 .category-card:hover .simple-icon {
     background-color: #f1B555;
     transform: rotateZ(-50deg);
+
+
 }
+
 
 /* category card ends */
 

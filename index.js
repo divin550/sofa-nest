@@ -22,7 +22,5 @@ collectionBtn.addEventListener("click", (e)=>{
 
 categoryCard1.addEventListener("click", (e)=>{
     e.preventDefault()
-    const details = document.createElement("div")
-    details.innerHTML = ``
-    
+   
 })
