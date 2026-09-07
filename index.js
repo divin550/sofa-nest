@@ -2,6 +2,8 @@ const navSearch = document.getElementById("nav-search");
 const navSearchBtn = document.getElementById("nav-search-btn");
 const collectionBtn = document.getElementById("collection-btn");
 const categoryCard1 = document.getElementById("category-card1");
+const interwoodDetails = document.querySelector(".interwood-details")
+const backBtn = document.querySelector(".back-btn")
 
 
 navSearchBtn.addEventListener("click", (e)=>{
@@ -22,5 +24,17 @@ collectionBtn.addEventListener("click", (e)=>{
 
 categoryCard1.addEventListener("click", (e)=>{
     e.preventDefault()
+    interwoodDetails.classList.toggle("display-none")
+    
+
+
+
+
    
+})
+backBtn.addEventListener("click", (e)=>{
+    e.preventDefault()
+    interwoodDetails.classList.contains("display-none")
+    
+    
 })
