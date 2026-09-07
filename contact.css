@@ -1,0 +1,460 @@
+:root {
+    --brown: #9b281a;
+    --gold: #f1b555;
+    --dark: #1f1a17;
+    --text: #4f4a45;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    color: var(--text);
+    background: #fffefb;
+}
+
+.wrapper {
+    width: min(1120px, calc(100% - 2rem));
+    margin: 0 auto;
+}
+
+.nav-container {
+    background-image: url(contact-bg.jpg);
+    height: 70vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.nav-container::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 80px;
+    width: 100%;
+    padding: 0 40px;
+    position: sticky;
+    z-index: 2;
+    top: 0;
+    font-family: "fraunces", sans-serif;
+}
+
+.navbar:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: background-color 0.3s ease-in-out;
+}
+
+.navbar-collapse.show,
+.navbar-collapse.collapsing {
+    backdrop-filter: blur(5px);
+    background-color: rgba(90, 90, 90, 0.695);
+    border-radius: 12px;
+    padding: 1rem;
+    margin-top: 0.5rem;
+    z-index: 2;
+}
+
+.nav-child h3 a {
+    font-family: "Fraunces", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 800;
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    color: white;
+    letter-spacing: 0.5px;
+}
+
+.nav-child a:hover {
+    color: #f8f9fa;
+    text-decoration: none;
+}
+
+.nav-container a {
+    color: white;
+    font-family: "Fraunces", sans-serif;
+}
+
+.navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.6);
+}
+
+.navbar-toggler-icon {
+    filter: invert(1);
+}
+
+.nav-child {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-collapse {
+    align-items: center;
+}
+
+.navbar-nav {
+    align-items: center;
+}
+
+.nav-link {
+    color: white;
+    font-family: "Fraunces", sans-serif;
+    margin-right: 0.5rem;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: white;
+}
+
+.form-control {
+    border-radius: 10px;
+    background-color: transparent;
+    border: 2px solid #ffbf67ea;
+    font-size: 1rem;
+    min-width: 220px;
+    height: 42px;
+    padding: 0.5rem 0.9rem;
+    margin: 0;
+    display: block;
+}
+
+.form-control:focus {
+    outline: none;
+    background: linear-gradient(to right, #ffc067c0, #d09138b7);
+    box-shadow: 0 0 10px #eaa442e3;
+    color: white;
+    font-weight: 500;
+}
+
+.form-control::placeholder {
+    color: white;
+}
+
+.navbar .btn {
+    background-color: transparent;
+    border: 2px solid #ffc067c0;
+    color: white;
+    border-radius: 10px;
+    padding: 0.5rem 1rem;
+    height: 42px;
+    margin: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar .btn:hover {
+    background-color: #eaa442e3;
+    box-shadow: 0 0 10px #eaa442e3;
+    color: white;
+}
+
+.d-flex[role="search"] {
+    align-items: center;
+    gap: 0.5rem;
+    margin-left: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    height: 42px;
+}
+
+/* .heading-title {
+    position: absolute;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    color: white;
+    padding: 1rem;
+    z-index: 1;
+} */
+
+/* .heading-title h1 {
+    font-size: clamp(2rem, 4vw, 3rem);
+    margin-bottom: 0.8rem;
+}
+
+.heading-title p {
+    font-size: 1.05rem;
+    max-width: 600px;
+} */
+
+.heading-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    font-family: "Inter", sans-serif;
+}
+
+.heading-title h1 {
+    font-size: 4rem;
+    line-height: 1.2;
+    font-family: "Inter", sans-serif;
+    text-transform: uppercase;
+
+}
+
+.contact-section {
+    padding: 5rem 0;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 2rem;
+}
+
+.contact-card {
+    background: white;
+    border-radius: 1.5rem;
+    padding: 2rem;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+}
+
+.section-tag {
+    color: var(--brown);
+    text-transform: uppercase;
+    letter-spacing: 0.25rem;
+    font-weight: 700;
+    font-size: 0.8rem;
+    margin-bottom: 0.7rem;
+}
+
+.contact-card h2,
+.visit-content h2 {
+    color: var(--dark);
+    margin-bottom: 1.2rem;
+}
+
+form label {
+    display: block;
+    margin-bottom: 0.4rem;
+    font-weight: 600;
+    color: var(--dark);
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 0.9rem 1rem;
+    border: 1px solid #e4d9cf;
+    border-radius: 0.8rem;
+    margin-bottom: 1rem;
+    background: #fcfaf7;
+}
+
+form input:focus,
+form textarea:focus {
+    outline: none;
+    border-color: var(--gold);
+    box-shadow: 0 0 0 3px rgba(241, 181, 85, 0.2);
+}
+
+.btn {
+    background-color: var(--brown);
+    color: white;
+    border: none;
+    border-radius: 999px;
+    padding: 0.8rem 1.3rem;
+    transition: 0.3s ease;
+}
+
+.btn:hover {
+    background-color: var(--dark);
+    color: white;
+}
+
+.contact-btn {
+    margin-top: 0.5rem;
+}
+
+.info-list {
+    list-style: none;
+    padding: 0;
+    margin: 1.2rem 0 1.5rem;
+}
+
+.info-list li {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    margin-bottom: 1rem;
+    color: var(--text);
+}
+
+.info-list i {
+    color: var(--gold);
+    font-size: 1rem;
+}
+
+.hours-card {
+    background: linear-gradient(135deg, #fff4e0, #fdf1db);
+    border-radius: 1rem;
+    padding: 1.2rem;
+}
+
+.hours-card h3 {
+    font-size: 1.15rem;
+    margin-bottom: 0.6rem;
+}
+
+.visit-section {
+    padding: 0 0 5rem;
+}
+
+.visit-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
+}
+
+.map-card {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(living-room.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 1.5rem;
+    min-height: 280px;
+    display: grid;
+    place-items: center;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+}
+
+.map-inner i {
+    font-size: 2rem;
+    color: var(--gold);
+    margin-bottom: 0.8rem;
+}
+
+.footer-bg {
+    background: var(--dark);
+    color: white;
+    padding: 2rem 0;
+}
+
+.footer-content {
+    text-align: center;
+}
+
+.footer-content h3 {
+    margin-bottom: 0.5rem;
+}
+
+@media (max-width: 900px) {
+
+    .contact-grid,
+    .visit-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar {
+        padding: 0 1rem;
+    }
+
+    .contact-card {
+        padding: 1.3rem;
+    }
+}
+
+/* additional changes */
+section {
+    font-family: "Inter", sans-serif;
+}
+
+
+
+
+
+
+
+
+/* Animated background elements */
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    background:
+        radial-gradient(circle at 10% 20%, rgba(255, 255, 255, 0.1) 0%, transparent 20%),
+        radial-gradient(circle at 90% 70%, rgba(255, 255, 255, 0.1) 0%, transparent 20%),
+        radial-gradient(circle at 50% 30%, rgba(255, 255, 255, 0.05) 0%, transparent 20%);
+    z-index: -1;
+}
+
+.floating-element {
+    position: absolute;
+    border-radius: 50%;
+    background-color: #9b291a;
+    z-index: -1;
+    animation: float 15s infinite ease-in-out;
+}
+
+
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0) rotate(0deg);
+    }
+
+    50% {
+        transform: translateY(-30px) rotate(20deg);
+    }
+}
+
+.floating-element:nth-child(1) {
+    width: 100px;
+    height: 100px;
+    top: 90%;
+    left: 5%;
+    animation-duration: 20s;
+}
+
+.floating-element:nth-child(2) {
+    width: 130px;
+    height: 130px;
+    top: 70%;
+    right: 5%;
+    animation-duration: 25s;
+    animation-delay: 2s;
+}
+
+.floating-element:nth-child(3) {
+    width: 80px;
+    height: 80px;
+    bottom: 20%;
+    left: 15%;
+    animation-duration: 18s;
+    animation-delay: 1s;
+}
+
+.floating-element:nth-child(4) {
+    width: 100px;
+    height: 100px;
+    top: 130%;
+    right: 10%;
+    animation-duration: 22s;
+    animation-delay: 3s;
+}

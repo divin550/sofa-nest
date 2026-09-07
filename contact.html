@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - SofaNest</title>
+
+    <link href="bootstrap-5.3.8-dist/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link href="contact.css" rel="stylesheet">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+        @import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+    </style>
+</head>
+
+<body>
+    <div class="floating-element"></div>
+    <div class="floating-element"></div>
+    <div class="floating-element"></div>
+    <div class="floating-element"></div>
+    <div class="nav-container container-fluid p-0">
+        <nav class="navbar navbar-expand-lg">
+            <div class="nav-child container-fluid">
+                <h3><a class="navbar-brand" href="index.html">SofaNest</a></h3>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#collections">Collections</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#about-us">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                        <button class="btn" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+        <div class="heading-title">
+            <h1>Let’s create your perfect corner</h1>
+        </div>
+    </div>
+
+    <section class="contact-section">
+        <div class="wrapper contact-grid">
+            <div class="contact-card form-card">
+                <p class="section-tag">Send us a message</p>
+                <h2>We’d love to hear from you</h2>
+                <form>
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" placeholder="Your name">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" placeholder="Your email">
+                        </div>
+                        <div class="col-12">
+                            <label for="phone">Phone</label>
+                            <input type="text" id="phone" placeholder="Your phone number">
+                        </div>
+                        <div class="col-12">
+                            <label for="message">Message</label>
+                            <textarea id="message" rows="5" placeholder="Tell us what you need"></textarea>
+                        </div>
+                    </div>
+                    <button class="btn contact-btn" type="submit">Send message</button>
+                </form>
+            </div>
+
+            <div class="contact-card info-card">
+                <p class="section-tag">Contact details</p>
+                <h2>Visit or call us anytime</h2>
+                <ul class="info-list">
+                    <li><i class="fa-solid fa-location-dot"></i><span>Bahria Town
+                            Karachi</span></li>
+                    <li><i class="fa-solid fa-phone"></i><span>+92 305 355 1111</span></li>
+                    <li><i class="fa-solid fa-envelope"></i><span>sofanesr@info.com</span></li>
+                </ul>
+
+                <div class="hours-card">
+                    <h3>Opening hours</h3>
+                    <p>Mon - Sat: 10:00 AM - 8:00 PM</p>
+                    <p>Sunday: 12:00 PM - 6:00 PM</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="visit-section">
+        <div class="wrapper visit-grid">
+            <div class="visit-content">
+                <p class="section-tag">Visit our showroom</p>
+                <h2>Experience comfort in person</h2>
+                <p>Step into our showroom to explore curated sofas, textures, and finishes before you decide.</p>
+                <a href="#" class="btn">Book a visit</a>
+            </div>
+            <div class="map-card">
+                <div class="map-inner">
+                    <i class="fa-solid fa-map-location-dot"></i>
+                    <h3>Showroom address</h3>
+                    <p>Bahria Town Karchi</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer-bg">
+        <div class="wrapper footer-content">
+            <h3>SofaNest</h3>
+            <p>Premium comfort for modern living spaces.</p>
+        </div>
+    </footer>
+
+    <script src="bootstrap-5.3.8-dist/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>
