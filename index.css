@@ -407,6 +407,45 @@ section {
     backdrop-filter: blur(4px);
     animation: popup 1s ease-in-out;
 }
+
+.oxford-details {
+    position: absolute;
+    top: 1.5rem;
+    left: 1.5rem;
+    right: 1.5rem;
+    padding: 1rem;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.55);
+    border-radius: 1rem;
+    backdrop-filter: blur(4px);
+    animation: popup 1s ease-in-out;
+}
+
+.moltyfoam-details {
+    position: absolute;
+    top: 1.5rem;
+    left: 1.5rem;
+    right: 1.5rem;
+    padding: 1rem;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.55);
+    border-radius: 1rem;
+    backdrop-filter: blur(4px);
+    animation: popup 1s ease-in-out;
+}
+.korean-details {
+    position: absolute;
+    top: 1.5rem;
+    left: 1.5rem;
+    right: 1.5rem;
+    padding: 1rem;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.55);
+    border-radius: 1rem;
+    backdrop-filter: blur(4px);
+    animation: popup 1s ease-in-out;
+}
+
 .display-none {
     display: none;
 }
@@ -434,7 +473,47 @@ section {
     margin-bottom: 0.75rem;
 }
 
+.oxford-details img {
+    width: 100%;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 0.75rem;
+    margin-bottom: 0.75rem;
+}
+
+.moltyfoam-details img {
+    width: 100%;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 0.75rem;
+    margin-bottom: 0.75rem;
+}
+.korean-details img {
+    width: 100%;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 0.75rem;
+    margin-bottom: 0.75rem;
+}
+
 .interwood-details h2 {
+    margin: 0;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+.oxford-details h2 {
+    margin: 0;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+.moltyfoam-details h2 {
+    margin: 0;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+.korean-details h2 {
     margin: 0;
     font-size: 1.5rem;
     text-transform: uppercase;
@@ -442,7 +521,27 @@ section {
 
 .interwood-details .price {
     margin: 0.35rem 0 0;
-    color: #f1b555;
+    color: white;
+    font-size: 1.15rem;
+    font-weight: 600;
+}
+
+.oxford-details .price {
+    margin: 0.35rem 0 0;
+    color: white;
+    font-size: 1.15rem;
+    font-weight: 600;
+}
+
+.moltyfoam-details .price {
+    margin: 0.35rem 0 0;
+    color: white;
+    font-size: 1.15rem;
+    font-weight: 600;
+}
+.korean-details .price {
+    margin: 0.35rem 0 0;
+    color: white;
     font-size: 1.15rem;
     font-weight: 600;
 }
