@@ -70,6 +70,7 @@ body {
 .navbar-collapse.show,
 .navbar-collapse.collapsing {
     background-color: rgba(70, 69, 69, 0.78);
+    backdrop-filter: blur(2px);
     border-radius: 12px;
     padding: 1rem;
     margin-top: 0.5rem;
