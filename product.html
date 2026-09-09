@@ -1,11 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>collections</title>
+    <!-- bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap-5.3.8-dist/css/bootstrap.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <!-- style.css -->
+    <link href="product.css" rel="stylesheet">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+    </style>
 </head>
-<body style="background-color: brown;">
-    
+
+<body>
+    <!-- bootstrap navbar -->
+    <nav class="navbar navbar-expand-lg"> <!---removed bg-body-tertiary-->
+        <div class="nav-child container-fluid">
+            <h3><a class="navbar-brand" href="#">SofaNest</a></h3>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#"
+                            style="font-family: 'fraunces', sans-serif; color: white;">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#arrivals">New Arrivals</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Collections
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#collections">Interwood</a></li>
+                            <li><a class="dropdown-item" href="#collections">Oxford</a></li>
+                            <li><a class="dropdown-item" href="#collections">MoltyHome</a></li>
+                            <li><a class="dropdown-item" href="#collections">Korean</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about-us">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#our-story">Our Story</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#reviews">Reviews</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contact.html">Contact</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"
+                        id="nav-search" />
+                    <button class="btn" id="nav-search-btn">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- bootstrap navbar ends  -->
+
+
+
+    <script src="bootstrap-5.3.8-dist/js/bootstrap.bundle.js"></script>
 </body>
+
 </html>
