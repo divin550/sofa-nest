@@ -1,12 +1,14 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 
 }
-body{
-    background: linear-gradient(to right, #ffbf67ea, #d09138);
+
+body {
     font-family: "Inter", sans-serif;
+    min-height: 100vh;
+    background: #171512;
 }
 
 
@@ -124,5 +126,10 @@ body{
     box-shadow: 0 0 10px #eaa442e3;
     color: white;
 }
+
+
+
+
+
 
 /* NAV ENDS  */
