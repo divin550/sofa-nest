@@ -19,6 +19,14 @@ body {
     color: white;
 }
 
+.navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.7);
+}
+
+.navbar-toggler-icon {
+    filter: invert(1);
+}
+
 
 
 .navbar {
@@ -132,4 +140,56 @@ body {
 
 
 
+
 /* NAV ENDS  */
+
+
+
+
+
+
+
+
+/* Chart Mode */
+.chart-mode {
+    max-width: 98%;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 15px;
+    padding: 1rem;
+    margin-top: 1rem;
+    color: white;
+    font-family: "fraunces", sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    
+}
+.mode{
+    border: none;
+    background: transparent;
+    color: white;
+    font-size: 1.7rem;
+
+}
+.cart{
+    border: none;
+    background: transparent;
+    color: white;
+    font-size: 1.7rem;
+    position: relative;
+}
+.cart-count{
+    background-color: #eaa442e3;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+}
