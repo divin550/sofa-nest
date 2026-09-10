@@ -13,22 +13,24 @@ body {
 .black {
     background: #171512;
 }
-.white{
+
+.white {
     background: rgb(221, 221, 221);
 }
 
 
 
 
-.nav-container{
-   max-width: 100%;
-   height: 100vh;
-   
+.nav-container {
+    max-width: 100%;
+    height: 100vh;
+
     background-image: url(assets/product\ background.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
+
 .nav-container::before {
     content: '';
     position: absolute;
@@ -165,8 +167,8 @@ body {
 
 
 
-/* NAV ENDS  */
 
+/* NAV ENDS  */
 
 
 
@@ -221,4 +223,48 @@ body {
     position: absolute;
     top: -10px;
     right: -10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media queries */
+@media (max-width: 730px) {
+    .navbar {
+        background-color: rgba(0, 0, 0, 0.3);
+        height: 80px;
+        width: 100%;
+        padding: 0 20px;
+        position: sticky;
+        z-index: 2;
+
+    }
+
+    .chart-mode {
+        max-width: 98%;
+        background-color: #00000092;
+        border-radius: 15px;
+        padding: 1rem;
+        margin-top: 1rem;
+        color: white;
+        font-family: "fraunces", sans-serif;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 10px;
+        margin-right: 10px;
+        position: relative;
+        z-index: 1;
+
+    }
 }
