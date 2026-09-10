@@ -18,62 +18,65 @@
 </head>
 
 <body>
-    <!-- bootstrap navbar -->
-    <nav class="navbar navbar-expand-xl"> <!---removed bg-body-tertiary-->
-        <div class="nav-child container-fluid">
-            <h3><a class="navbar-brand" href="#">SofaNest</a></h3>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#"
-                            style="font-family: 'fraunces', sans-serif; color: white;">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#arrivals">New Arrivals</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Collections
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#collections">Interwood</a></li>
-                            <li><a class="dropdown-item" href="#collections">Oxford</a></li>
-                            <li><a class="dropdown-item" href="#collections">MoltyHome</a></li>
-                            <li><a class="dropdown-item" href="#collections">Korean</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about-us">About Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#our-story">Our Story</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#reviews">Reviews</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/contact.html">Contact</a>
-                    </li>
-                </ul>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"
-                        id="nav-search" />
-                    <button class="btn" id="nav-search-btn">Search</button>
-                </form>
+    <div class="nav-container">
+        <!-- bootstrap navbar -->
+        <nav class="navbar navbar-expand-xl"> <!---removed bg-body-tertiary-->
+            <div class="nav-child container-fluid">
+                <h3><a class="navbar-brand" href="#">SofaNest</a></h3>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#"
+                                style="font-family: 'fraunces', sans-serif; color: white;">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#arrivals">New Arrivals</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Collections
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#collections">Interwood</a></li>
+                                <li><a class="dropdown-item" href="#collections">Oxford</a></li>
+                                <li><a class="dropdown-item" href="#collections">MoltyHome</a></li>
+                                <li><a class="dropdown-item" href="#collections">Korean</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about-us">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#our-story">Our Story</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#reviews">Reviews</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/contact.html">Contact</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"
+                            id="nav-search" />
+                        <button class="btn" id="nav-search-btn">Search</button>
+                    </form>
+                </div>
             </div>
+        </nav>
+        <!-- bootstrap navbar ends  -->
+        <div class="chart-mode">
+            <button class="mode" id="mode"><i class="fa-solid fa-moon"></i></button>
+            <div class="cart"><i class="fa-solid fa-cart-shopping"></i><span class="cart-count">0</span></div>
         </div>
-    </nav>
-    <!-- bootstrap navbar ends  -->
-     <div class="chart-mode">
-        <button class="mode" id="mode"><i class="fa-solid fa-moon"></i></button>
-        <div class="cart"><i class="fa-solid fa-cart-shopping"></i><span class="cart-count">0</span></div>
-     </div>
+    </div>
+
 
 
 

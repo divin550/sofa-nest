@@ -8,10 +8,34 @@
 body {
     font-family: "Inter", sans-serif;
     min-height: 100vh;
+}
+
+.black {
     background: #171512;
+}
+.white{
+    background: rgb(221, 221, 221);
 }
 
 
+
+
+.nav-container{
+   max-width: 100%;
+   height: 100vh;
+   
+    background-image: url(assets/product\ background.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.nav-container::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: rgba(56, 56, 56, 0.221);
+    backdrop-filter: blur(3px);
+}
 
 /* NAV START */
 .navbar .nav-link,
@@ -153,7 +177,7 @@ body {
 /* Chart Mode */
 .chart-mode {
     max-width: 98%;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: #00000092;
     border-radius: 15px;
     padding: 1rem;
     margin-top: 1rem;
@@ -164,23 +188,28 @@ body {
     align-items: center;
     margin-left: 1rem;
     margin-right: 1rem;
-    
+    position: relative;
+    z-index: 1;
+
 }
-.mode{
+
+.mode {
     border: none;
     background: transparent;
     color: white;
     font-size: 1.7rem;
 
 }
-.cart{
+
+.cart {
     border: none;
     background: transparent;
     color: white;
     font-size: 1.7rem;
     position: relative;
 }
-.cart-count{
+
+.cart-count {
     background-color: #eaa442e3;
     border-radius: 50%;
     width: 20px;
