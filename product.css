@@ -61,6 +61,18 @@ body {
     top: 0;
 }
 
+/* ===== CHANGE START (fix: navbar-collapse getting overlaid by .cart-filter) =====
+   When the collapse menu is open, lift the WHOLE navbar's stacking
+   context above .cart-filter (z-index: 2) so the open menu isn't
+   painted over. When closed, .navbar stays at z-index 2 and
+   .cart-filter wins as before, since it comes later in the DOM. */
+.navbar:has(.navbar-collapse.show),
+.navbar:has(.navbar-collapse.collapsing) {
+    z-index: 3;
+}
+
+/* ===== CHANGE END ===== */
+
 .navbar-collapse.show,
 .navbar-collapse.collapsing {
     background-color: rgba(70, 69, 69, 0.78);
@@ -317,7 +329,7 @@ body {
     box-shadow: none;
 }
 
-.dropdown-menu2{
+.dropdown-menu2 {
     transition: all 0.3s ease-in-out;
     backdrop-filter: blur(5px);
     background-color: #212121be;
