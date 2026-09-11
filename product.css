@@ -14,11 +14,6 @@ body {
     background: #171512;
 }
 
-.white {
-    background: rgb(221, 221, 221);
-}
-
-
 
 
 .nav-container {
@@ -62,7 +57,7 @@ body {
     width: 100%;
     padding: 0 40px;
     position: sticky;
-    z-index: 1;
+    z-index: 2;
     top: 0;
 }
 
@@ -73,7 +68,6 @@ body {
     border-radius: 12px;
     padding: 1rem;
     margin-top: 0.5rem;
-    z-index: 2;
 }
 
 .navbar:hover {
@@ -279,7 +273,7 @@ body {
 
 }
 
-.dropdown-toggle {
+.dropdown-btn {
     background-color: transparent;
     border: none;
     color: white;
@@ -293,7 +287,7 @@ body {
     letter-spacing: 5px;
 }
 
-.dropdown-toggle:focus {
+.dropdown-btn:focus {
     background-color: transparent;
     border: none;
     color: white;
@@ -308,7 +302,7 @@ body {
     box-shadow: none;
 }
 
-.dropdown-toggle:hover {
+.dropdown-btn:hover {
     background-color: transparent;
     border: none;
     color: white;
@@ -323,7 +317,7 @@ body {
     box-shadow: none;
 }
 
-.dropdown-menu{
+.dropdown-menu2{
     transition: all 0.3s ease-in-out;
     backdrop-filter: blur(5px);
     background-color: #212121be;
@@ -367,7 +361,7 @@ body {
         margin-left: 10px;
         margin-right: 10px;
         position: relative;
-        z-index: 1;
+        z-index: 2;
 
     }
 }
