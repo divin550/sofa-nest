@@ -28,6 +28,7 @@ body {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    position: relative;
 }
 
 .nav-container::before {
@@ -36,6 +37,7 @@ body {
     inset: 0;
     background-color: rgba(56, 56, 56, 0.221);
     backdrop-filter: blur(3px);
+    z-index: 1;
 }
 
 /* NAV START */
@@ -60,7 +62,7 @@ body {
     width: 100%;
     padding: 0 40px;
     position: sticky;
-    z-index: 2;
+    z-index: 1;
     top: 0;
 }
 
@@ -190,20 +192,10 @@ body {
     margin-left: 1rem;
     margin-right: 1rem;
     position: relative;
-    z-index: 1;
+    z-index: 2;
 
 }
 
-.filter{
-    color: white;
-    background-color: transparent;
-    border: none;
-    font-size: 1.3rem;
-    display: flex;
-    gap: 5px;
-    justify-content: center;
-    align-items: center;
-}
 
 .cart {
     border: none;
@@ -225,6 +217,17 @@ body {
     position: absolute;
     top: -10px;
     right: -10px;
+}
+
+.offcanvas{
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    font-family: "fraunces", sans-serif;
+    backdrop-filter: blur(2px);
+    border-radius: 12px;
+    padding: 1rem;
+    margin-top: 0.5rem;
+    z-index: 2;
 }
 
 
