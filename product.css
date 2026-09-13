@@ -333,12 +333,88 @@ body {
     transition: all 0.3s ease-in-out;
     backdrop-filter: blur(5px);
     background-color: #212121be;
+    width: 200px;
 }
 
 .dropdown-menu2 .dropdown-item:hover,
 .dropdown-menu2 .dropdown-item:focus {
     background-color: #212121be;
     color: white;
+}
+
+.price-range {
+    position: relative;
+    margin: 0.5rem;
+    padding: 1.25rem 0.75rem 0.5rem;
+}
+
+.price-range-input {
+    position: absolute;
+    top: 1.25rem;
+    left: 0.75rem;
+    width: calc(100% - 1.5rem);
+    margin: 0;
+    pointer-events: none;
+}
+
+.price-range-input::-webkit-slider-runnable-track {
+    background: #eaa442e3;
+}
+
+.price-range-input::-moz-range-track {
+    background: #eaa442e3;
+}
+
+.price-range-input::-webkit-slider-thumb {
+    background: #eaa442e3;
+    pointer-events: auto;
+}
+
+.price-range-input::-moz-range-thumb {
+    background: #eaa442e3;
+    pointer-events: auto;
+}
+
+.price-range-min {
+    z-index: 2;
+}
+
+.price-range-values {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+    color: white;
+    font-size: 0.75rem;
+}
+.range1{
+    width: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+    border: 1px solid #eaa442e3;
+    border-radius: 5px;
+    font-size: 0.90rem;
+
+}
+.range2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    border: 1px solid #eaa442e3;
+    border-radius: 5px;
+    font-size: 0.90rem;
+
+}
+.to{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 10px 20px 10px 20px; */
+    font-weight: 600;
+    font-size: 0.90rem;
+
 }
 
 

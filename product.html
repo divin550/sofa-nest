@@ -116,9 +116,18 @@
                             Price
                         </button>
                         <ul class="dropdown-menu dropdown-menu2">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li>
+                                <div class="price-range">
+                                    <input type="range" class="form-range price-range-input price-range-min" min="0" max="1000000" step="10" value="0" aria-label="Minimum price">
+                                    <input type="range" class="form-range price-range-input price-range-max" min="0" max="1000000" step="10" value="1000000" aria-label="Maximum price">
+                                    <div class="price-range-values">
+                                        <div class="range1"><span>Rs</span> <span class="price-min">0</span></div>
+
+                                        <span class="to">to</span>
+                                        <div class="range2"><span>Rs</span> <span class="price-max">1000000</span></div>
+                                    </div>
+                                </div>
+                            </li>
                         </ul>
                     </div>
                 </div>
