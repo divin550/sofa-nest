@@ -334,6 +334,9 @@ body {
     backdrop-filter: blur(5px);
     background-color: #212121be;
 }
+.dropdown-menu2:hover{
+    background-color: #212121be;
+}
 
 
 
