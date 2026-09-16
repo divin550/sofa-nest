@@ -467,9 +467,8 @@ body {
 
 }
 
-.card:hover .card-body{
+.card-click{
   bottom: 0;
-  
 }
 
 
