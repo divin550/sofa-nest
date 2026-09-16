@@ -51,9 +51,8 @@ body {
   height: 80px;
   width: 100%;
   padding: 0 40px;
-  position: sticky;
+  position: relative;
   z-index: 2;
-  top: 0;
 }
 
 /* ===== CHANGE START (fix: navbar-collapse getting overlaid by .cart-filter) =====
@@ -175,7 +174,8 @@ body {
   align-items: center;
   margin-left: 1rem;
   margin-right: 1rem;
-  position: relative;
+  position: sticky;
+  top: 1rem;
   z-index: 2;
 }
 
@@ -410,7 +410,9 @@ body {
   font-weight: 700;
   letter-spacing: 1px;
   cursor: pointer;
-  transition: background-color 0.2s ease, color 0.2s ease;
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease;
 }
 
 .price-apply-btn:hover,
@@ -418,6 +420,72 @@ body {
   background-color: transparent;
   color: white;
   outline: none;
+}
+
+/* card section */
+
+.card-container {
+  background: linear-gradient(
+    135deg,
+    rgba(23, 21, 18, 0.96),
+    rgba(70, 45, 22, 0.9)
+  );
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  z-index: 1;
+  gap: 1rem;
+  padding: 2rem;
+  font-family: "Inter", sans-serif;
+}
+
+.card {
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  background-image: url(assets/best-image3.last.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.card-body {
+  background-color: #171512;
+  color: white;
+  flex: 0 0 auto;
+  height: 120px;
+  width: 100%;
+  margin-top: auto;
+  border-radius: 10px;
+  transform: translateY(100%);
+ 
+
+  
+
+}
+
+
+.card-title{
+  font-size: 1.5rem;
+  font-weight: 400;
+  letter-spacing: 3px;
+}
+
+.add-to-cart-btn {
+  background-color: #9b281a;
+  color: white;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 20px;
+}
+
+.add-to-cart-btn:hover {
+  background-color: black;
+  box-shadow: none;
 }
 
 /* media queries */
