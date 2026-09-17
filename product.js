@@ -37,21 +37,22 @@ const cardData = [
   {
     title: "Korean",
     price: 200000,
-    Image: "assets/footer-bg.jpg",
+    Image: "assets/contact-bg.jpg",
   },
   {
     title: "MoltyHome",
     price: 150000,
-    Image: "assets/category.img2(2).jpg",
+    Image: "assets/best-image1.jpg",
   },
 ];
 
 cardData.forEach((data) => {
+  // let styles = "background-image: url(assets/796.jpg); background-position: 70% center";
+  // card.style.cssText = styles;
   const card = document.createElement("div");
   card.classList.add("card");
-  card.style.width = "19rem"
+  card.style.width = "19rem";
   card.style.backgroundImage = `url("${data.Image}")`;
-  card.style.backgroundSize = "cover";
   card.style.backgroundPosition = "center";
 
   const cardHtml = `

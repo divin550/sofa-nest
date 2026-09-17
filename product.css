@@ -440,6 +440,7 @@ body {
 }
 
 .card {
+  background-color: #000000;
   height: 400px;
   display: flex;
   flex-direction: column;
@@ -451,6 +452,29 @@ body {
   border-radius: 10px;
   overflow: hidden;
   position: relative;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: inherit;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: transform 0.5s ease;
+  z-index: 0;
+}
+
+.card:hover {
+  background-size: cover;
+}
+
+.card:hover::before {
+  transform: scale(1.1);
+}
+.img796{
+  background-position: 70% center;
 }
 
 
@@ -467,6 +491,7 @@ body {
   bottom: -50%;
   padding: 1rem 1.25rem;
   transition: all 0.5s;
+  z-index: 1;
 
 }
 
