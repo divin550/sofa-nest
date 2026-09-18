@@ -431,9 +431,10 @@ body {
     rgba(70, 45, 22, 0.9)
   );
   position: relative;
-  display: flex;
-  /* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); */
- 
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  justify-content: center;
+  align-items: center;
   gap: 1rem;
   padding: 2rem;
   font-family: "Inter", sans-serif;
