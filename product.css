@@ -494,6 +494,21 @@ body {
   z-index: 1;
 
 }
+/* .card-body2 {
+  background-color: #171512;
+  color: white;
+  flex: 0 0 auto;
+  height: 150px;
+  width: 100%;
+  margin-top: auto;
+  border-radius: 10px;
+  position: absolute;
+  bottom: -50%;
+  padding: 1rem 1.25rem;
+  transition: all 0.5s;
+  z-index: 1;
+
+} */
 
 
 

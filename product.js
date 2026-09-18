@@ -18,11 +18,6 @@ rangeInput2.addEventListener("input", (e) => {
   }
 });
 
-cardContainer.addEventListener("click", (e) => {
-  const cardBody = document.getElementById("card-body");
-  cardBody.classList.toggle("card-click");
-});
-
 const cardData = [
   {
     title: "oxford",
@@ -47,8 +42,6 @@ const cardData = [
 ];
 
 cardData.forEach((data) => {
-  // let styles = "background-image: url(assets/796.jpg); background-position: 70% center";
-  // card.style.cssText = styles;
   const card = document.createElement("div");
   card.classList.add("card");
   card.style.width = "19rem";
@@ -62,7 +55,22 @@ cardData.forEach((data) => {
           <button type="button" class="btn add-to-cart-btn">Add to cart</button>
         </div>
       `;
+  const cardHtml2 = `
+        <div class="card-body" id="card-body2">
+          <p class="card-title">${data.title}</p>
+          <p class="card-price">Rs <span id="price">${data.price}</span></p>
+          <button type="button" class="btn add-to-cart-btn">Add to cart</button>
+        </div>
+      `;
 
   card.innerHTML = cardHtml;
+  card.innerHTML = cardHtml2;
   cardContainer.appendChild(card);
+
+  card.addEventListener("click", (e) => {
+    const cardBody = document.querySelector(".card-body")
+    // const cardBody2 = document.querySelector(".card-body")
+    cardBody.classList.toggle("card-click")
+    // cardBody2.classList.toggle("card-click")
+  });
 });
