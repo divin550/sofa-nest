@@ -61,7 +61,8 @@ cardData.forEach((data) => {
   cardContainer.appendChild(card);
 
   card.addEventListener("click", (e) => {
-    const cardBody = document.querySelector(".card-body")
+    const cardBody = card.querySelector(".card-body")
     cardBody.classList.toggle("card-click")
   });
+
 });
