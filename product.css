@@ -12,6 +12,10 @@ body {
 .black {
   background: #171512;
 }
+.display-none{
+  display: none;
+}
+
 
 .nav-container {
   max-width: 100%;
@@ -237,6 +241,15 @@ body {
 
 .cart-item-details span {
   display: block;
+}
+
+.cart-delete-button {
+  margin-left: auto;
+  border: none;
+  background: transparent;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
 }
 
 .cart-count {

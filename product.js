@@ -4,6 +4,7 @@ const cartCount = document.querySelector(".cart-count");
 const rangeInput = document.getElementById("form-range");
 const rangeInput2 = document.getElementById("form-range2");
 const cardContainer = document.querySelector(".card-container");
+const cartDeleteBtn = document.querySelector(".cart-delete-button")
 
 rangeInput.addEventListener("input", (e) => {
   const minPrice = document.getElementById("price-min");
@@ -66,3 +67,15 @@ cardData.forEach((data) => {
   });
 
 });
+
+cartDeleteBtn.addEventListener("click", (e) =>{
+  
+  const cartContent = document.querySelector(".cart-content")
+  cartContent.remove()
+  
+  console.log('clicked');
+  
+  
+
+
+})
