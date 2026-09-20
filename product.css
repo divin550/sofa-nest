@@ -217,6 +217,27 @@ body {
   object-fit: cover;
   border-radius: 8px;
 }
+.cart-price-sec{
+  display: flex;
+  gap: 5px;
+  margin-top: 10px;
+  font-size: 0.9rem;
+}
+
+.cart-item-details {
+  font-family: "Inter", sans-serif;
+}
+
+.cart-item-details h4 {
+  margin: 0;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.cart-item-details span {
+  display: block;
+}
 
 .cart-count {
   background-color: #eaa442e3;
