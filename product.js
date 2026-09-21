@@ -5,6 +5,8 @@ const rangeInput = document.getElementById("form-range");
 const rangeInput2 = document.getElementById("form-range2");
 const cardContainer = document.querySelector(".card-container");
 const cartDeleteBtn = document.querySelector(".cart-delete-button")
+const plusBtn = document.querySelector(".plus-btn")
+const subBtn = document.querySelector(".subtract-btn")
 
 rangeInput.addEventListener("input", (e) => {
   const minPrice = document.getElementById("price-min");
@@ -79,3 +81,35 @@ cartDeleteBtn.addEventListener("click", (e) =>{
 
 
 })
+let val = 0
+let price = 450000
+plusBtn.addEventListener("click", (e)=>{
+  const cartQuantityControlsValue = document.querySelector(".cart-quantity-controls-value")
+  const sofaCartPrice = document.querySelector(".sofa-cart-price")
+  val++
+  cartQuantityControlsValue.innerHTML = val
+  if (val > 0) {
+    sofaCartPrice.innerHTML = price * val 
+
+    
+    
+  }
+
+
+
+})
+subBtn.addEventListener("click", (e)=>{
+  const cartQuantityControlsValue = document.querySelector(".cart-quantity-controls-value")
+  const sofaCartPrice = document.querySelector(".sofa-cart-price")
+  if (val >= 1) {
+    cartQuantityControlsValue.innerHTML = val--
+    sofaCartPrice.innerHTML = price * val
+    
+
+  }else if (val === 1) {
+    sofaCartPrice.innerHTML = price
+    
+  }
+
+})
+

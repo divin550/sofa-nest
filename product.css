@@ -243,6 +243,24 @@ body {
   display: block;
 }
 
+.cart-quantity-controls {
+  display: flex;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.cart-quantity-controls button {
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  border: 2px solid white;
+  border-radius: 50%;
+  background: transparent;
+  color: white;
+  line-height: 1;
+  cursor: pointer;
+}
+
 .cart-delete-button {
   margin-left: auto;
   border: none;
