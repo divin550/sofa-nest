@@ -4,9 +4,9 @@ const cartCount = document.querySelector(".cart-count");
 const rangeInput = document.getElementById("form-range");
 const rangeInput2 = document.getElementById("form-range2");
 const cardContainer = document.querySelector(".card-container");
-const cartDeleteBtn = document.querySelector(".cart-delete-button")
-const plusBtn = document.querySelector(".plus-btn")
-const subBtn = document.querySelector(".subtract-btn")
+const cartDeleteBtn = document.querySelector(".cart-delete-button");
+const plusBtn = document.querySelector(".plus-btn");
+const subBtn = document.querySelector(".subtract-btn");
 
 rangeInput.addEventListener("input", (e) => {
   const minPrice = document.getElementById("price-min");
@@ -58,58 +58,55 @@ cardData.forEach((data) => {
           <button type="button" class="btn add-to-cart-btn">Add to cart</button>
         </div>
       `;
- 
 
   card.innerHTML = cardHtml;
   cardContainer.appendChild(card);
 
   card.addEventListener("click", (e) => {
-    const cardBody = card.querySelector(".card-body")
-    cardBody.classList.toggle("card-click")
+    const cardBody = card.querySelector(".card-body");
+    cardBody.classList.toggle("card-click");
   });
+  const addToCartBtn = document.querySelectorAll(".add-to-cart-btn");
+  const cartContent = document.createElement("div")
+  cartContent.classList.add("cart-content")
+  
 
+  addToCartBtn.forEach((addCartBtn) => {
+    addCartBtn.addEventListener("click", (e) => {
+      e.stopPropagation();
+      console.log("hello");
+    });
+  });
 });
 
-cartDeleteBtn.addEventListener("click", (e) =>{
-  
-  const cartContent = document.querySelector(".cart-content")
-  cartContent.remove()
-  
-  console.log('clicked');
-  
-  
+cartDeleteBtn.addEventListener("click", (e) => {
+  const cartContent = document.querySelector(".cart-content");
+  cartContent.remove();
 
-
-})
-let val = 0
-let price = 450000
-plusBtn.addEventListener("click", (e)=>{
-  const cartQuantityControlsValue = document.querySelector(".cart-quantity-controls-value")
-  const sofaCartPrice = document.querySelector(".sofa-cart-price")
-  val++
-  cartQuantityControlsValue.innerHTML = val
+  console.log("clicked");
+});
+let val = 0;
+let price = 450000;
+plusBtn.addEventListener("click", (e) => {
+  const cartQuantityControlsValue = document.querySelector(
+    ".cart-quantity-controls-value",
+  );
+  const sofaCartPrice = document.querySelector(".sofa-cart-price");
+  val++;
+  cartQuantityControlsValue.innerHTML = val;
   if (val > 0) {
-    sofaCartPrice.innerHTML = price * val 
-
-    
-    
+    sofaCartPrice.innerHTML = price * val;
   }
-
-
-
-})
-subBtn.addEventListener("click", (e)=>{
-  const cartQuantityControlsValue = document.querySelector(".cart-quantity-controls-value")
-  const sofaCartPrice = document.querySelector(".sofa-cart-price")
+});
+subBtn.addEventListener("click", (e) => {
+  const cartQuantityControlsValue = document.querySelector(
+    ".cart-quantity-controls-value",
+  );
+  const sofaCartPrice = document.querySelector(".sofa-cart-price");
   if (val >= 1) {
-    cartQuantityControlsValue.innerHTML = val--
-    sofaCartPrice.innerHTML = price * val
-    
-
-  }else if (val === 1) {
-    sofaCartPrice.innerHTML = price
-    
+    cartQuantityControlsValue.innerHTML = val--;
+    sofaCartPrice.innerHTML = price * val;
+  } else if (val === 1) {
+    sofaCartPrice.innerHTML = price;
   }
-
-})
-
+});
