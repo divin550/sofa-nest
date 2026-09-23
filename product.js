@@ -1,12 +1,8 @@
 const modeBtn = document.getElementById("mode");
 const cartBtn = document.querySelector(".cart");
-const cartCount = document.querySelector(".cart-count");
 const rangeInput = document.getElementById("form-range");
 const rangeInput2 = document.getElementById("form-range2");
 const cardContainer = document.querySelector(".card-container");
-const cartDeleteBtn = document.querySelector(".cart-delete-button");
-const plusBtn = document.querySelector(".plus-btn");
-const subBtn = document.querySelector(".subtract-btn");
 
 rangeInput.addEventListener("input", (e) => {
   const minPrice = document.getElementById("price-min");
@@ -43,6 +39,7 @@ const cardData = [
     Image: "assets/best-image1.jpg",
   },
 ];
+let cartCountVal = 0
 
 cardData.forEach((data) => {
   const card = document.createElement("div");
@@ -68,6 +65,7 @@ cardData.forEach((data) => {
   });
   const cartContent = document.createElement("div");
   cartContent.classList.add("cart-content");
+  cartContent.style.marginTop = "1rem"
   const cartContentHtml = `
   <img
   class="cart-item-image"
@@ -94,42 +92,55 @@ cardData.forEach((data) => {
                 `;
   const addToCartBtn = card.querySelector(".add-to-cart-btn");
   const offcanvasBody = document.querySelector(".offcanvas-body2");
+  const cartCount = document.querySelector(".cart-count");
+  let isAdded = false
   addToCartBtn.addEventListener("click", (e) => {
     e.stopPropagation();
     cartContent.innerHTML = cartContentHtml;
     console.log(offcanvasBody);
     offcanvasBody.appendChild(cartContent);
+    if (!isAdded) {
+      isAdded = true
+      cartCountVal++
+      cartCount.innerHTML = cartCountVal
+    }
+    
+    
+    
+    const plusBtn = cartContent.querySelector(".plus-btn");
+    const subBtn = cartContent.querySelector(".subtract-btn");
+    let val = 0;
+    let price = data.price;
+    plusBtn.addEventListener("click", (e) => {
+      const cartQuantityControlsValue = cartContent.querySelector(
+        ".cart-quantity-controls-value",
+        console.log(plusBtn),
+      );
+      const sofaCartPrice = cartContent.querySelector(".sofa-cart-price");
+      val++;
+      cartQuantityControlsValue.innerHTML = val;
+      if (val > 0) {
+        sofaCartPrice.innerHTML = price * val;
+      }
+    });
+    subBtn.addEventListener("click", (e) => {
+      const cartQuantityControlsValue = cartContent.querySelector(
+        ".cart-quantity-controls-value",
+      );
+      const sofaCartPrice = cartContent.querySelector(".sofa-cart-price");
+      if (val >= 1) {
+        cartQuantityControlsValue.innerHTML = val--;
+        sofaCartPrice.innerHTML = price * val;
+      } else if (val === 1) {
+        sofaCartPrice.innerHTML = price;
+      }
+    });
+    const cartDeleteBtn = cartContent.querySelector(".cart-delete-button");
+    cartDeleteBtn.addEventListener("click", (e) => {
+      const cartContent = document.querySelector(".cart-content");
+      cartContent.remove();
+  
+      console.log(e);
+    });
   });
-});
-
-cartDeleteBtn.addEventListener("click", (e) => {
-  const cartContent = document.querySelector(".cart-content");
-  cartContent.remove();
-
-  console.log("clicked");
-});
-let val = 0;
-let price = 450000;
-plusBtn.addEventListener("click", (e) => {
-  const cartQuantityControlsValue = document.querySelector(
-    ".cart-quantity-controls-value",
-  );
-  const sofaCartPrice = document.querySelector(".sofa-cart-price");
-  val++;
-  cartQuantityControlsValue.innerHTML = val;
-  if (val > 0) {
-    sofaCartPrice.innerHTML = price * val;
-  }
-});
-subBtn.addEventListener("click", (e) => {
-  const cartQuantityControlsValue = document.querySelector(
-    ".cart-quantity-controls-value",
-  );
-  const sofaCartPrice = document.querySelector(".sofa-cart-price");
-  if (val >= 1) {
-    cartQuantityControlsValue.innerHTML = val--;
-    sofaCartPrice.innerHTML = price * val;
-  } else if (val === 1) {
-    sofaCartPrice.innerHTML = price;
-  }
 });
