@@ -1,0 +1,141 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #211f1f;
+  color: #d6d1d1;
+  padding: 30px;
+}
+
+/* Main checkout */
+
+.checkout-container {
+  width: 100%;
+  max-width: 700px;
+  margin: auto;
+}
+
+/* Heading */
+
+h2 {
+  color: #eeeeee;
+  font-size: 28px;
+  font-weight: 400;
+  margin-bottom: 45px;
+}
+
+/* First three inputs */
+
+.form-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.form-row label {
+  width: 168px;
+  color: #b9b4b4;
+  font-size: 16px;
+  letter-spacing: 2px;
+}
+
+.form-row input {
+  flex: 1;
+  height: 35px;
+  background-color: #151515;
+  border: 1px solid #393535;
+  border-radius: 10px;
+  outline: none;
+  color: #eeeeee;
+  padding: 0 12px;
+  font-size: 14px;
+}
+
+.form-row input:focus {
+  border-color: #555050;
+}
+
+/* Full-width inputs */
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  color: #b9b4b4;
+  font-size: 16px;
+  letter-spacing: 2px;
+  margin-bottom: 9px;
+}
+
+.form-group input {
+  width: 100%;
+  height: 35px;
+  background-color: #151515;
+  border: 1px solid #393535;
+  border-radius: 10px;
+  outline: none;
+  color: #eeeeee;
+  padding: 0 12px;
+  font-size: 14px;
+}
+
+.form-group input:focus {
+  border-color: #555050;
+}
+
+/* Pin Code + City
+   State + Nation */
+
+.two-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 55px;
+}
+
+/* Checkbox */
+
+.shipping-check {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin-top: 45px;
+}
+
+.shipping-check input {
+  width: 16px;
+  height: 16px;
+  accent-color: #555555;
+}
+
+.shipping-check label {
+  color: #b9b4b4;
+  font-size: 16px;
+  letter-spacing: 2px;
+}
+
+/* Continue button */
+
+button {
+  display: block;
+  margin: 30px auto 0;
+  background-color: #3a3838;
+  color: #eeeeee;
+  border: 1px solid #4a4747;
+  border-radius: 20px;
+  padding: 8px 50px;
+  font-size: 18px;
+  letter-spacing: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #484545;
+  transition: all 0.3s;
+}

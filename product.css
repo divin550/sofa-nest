@@ -314,6 +314,22 @@ body {
   letter-spacing: 5px;
 }
 
+.checkout-container {
+  display: flex;
+  justify-content: center;
+}
+
+.checkout-btn {
+  background-color: #eaa442e3;
+  font-size: 1.2rem;
+  border-radius: 20px;
+}
+
+.checkout-btn:hover {
+  background-color: black;
+  color: white;
+}
+
 .filter-btn {
   border: none;
   display: inline-flex;
