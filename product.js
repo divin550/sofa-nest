@@ -66,16 +66,39 @@ cardData.forEach((data) => {
     const cardBody = card.querySelector(".card-body");
     cardBody.classList.toggle("card-click");
   });
-  const addToCartBtn = document.querySelectorAll(".add-to-cart-btn");
-  const cartContent = document.createElement("div")
-  cartContent.classList.add("cart-content")
-  
-
-  addToCartBtn.forEach((addCartBtn) => {
-    addCartBtn.addEventListener("click", (e) => {
-      e.stopPropagation();
-      console.log("hello");
-    });
+  const cartContent = document.createElement("div");
+  cartContent.classList.add("cart-content");
+  const cartContentHtml = `
+  <img
+  class="cart-item-image"
+  src="${data.Image}"
+  alt="Sofa chair"
+  />
+  <div class="cart-item-details">
+                <h4>${data.title}</h4>
+                <div class="cart-price-sec">Rs<span class="sofa-cart-price">${data.price}</span></div>
+                <div class="cart-quantity-controls">
+                <button type="button" aria-label="Decrease quantity" class="subtract-btn">-</button>
+                <span class="cart-quantity-controls-value">0</span>
+                <button type="button" aria-label="Increase quantity" class="plus-btn">+</button>
+                </div>
+                </div>
+                <button
+                class="cart-delete-button"
+                type="button"
+                aria-label="Remove Interwood from cart"
+                title="Remove from cart"
+                >
+                <i class="fa-solid fa-trash" aria-hidden="true"></i>
+                </button>
+                `;
+  const addToCartBtn = card.querySelector(".add-to-cart-btn");
+  const offcanvasBody = document.querySelector(".offcanvas-body2");
+  addToCartBtn.addEventListener("click", (e) => {
+    e.stopPropagation();
+    cartContent.innerHTML = cartContentHtml;
+    console.log(offcanvasBody);
+    offcanvasBody.appendChild(cartContent);
   });
 });
 
