@@ -21,70 +21,72 @@
   </head>
 
   <body>
-    <div class="checkout-container">
+    <form action="checkout.php" method="post" class="checkout-container">
       <h2>Billing Address</h2>
 
       <div class="form-row">
         <label>Full Name</label>
-        <input type="text" />
+        <input type="text" name="full_name" value="" />
       </div>
 
       <div class="form-row">
         <label>Phone Number</label>
-        <input type="text" />
+        <input type="number" name="phone_number" value="" />
       </div>
 
       <div class="form-row">
         <label>Email Id</label>
-        <input type="email" />
+        <input type="email" name="email" value="" />
       </div>
 
       <div class="form-group">
         <label>Flat, House no, Building, Company</label>
-        <input type="text" />
+        <input type="text" name="address_line_1" value="" />
       </div>
 
       <div class="form-group">
         <label>Area, Street, Village</label>
-        <input type="text" />
+        <input type="text" name="address_line_2" value="" />
       </div>
 
       <div class="form-group">
         <label>Landmark</label>
-        <input type="text" />
+        <input type="text" name="landmark" value="" />
       </div>
 
       <div class="two-columns">
         <div class="form-group">
           <label>Pin Code</label>
-          <input type="text" />
+          <input type="number" name="pin_code" value="" />
         </div>
 
         <div class="form-group">
           <label>City</label>
-          <input type="text" />
+          <input type="text" name="city" value="" />
         </div>
       </div>
 
       <div class="two-columns">
         <div class="form-group">
           <label>State</label>
-          <input type="text" />
+          <input type="text" name="state" value="" />
         </div>
 
         <div class="form-group">
           <label>Nation</label>
-          <input type="text" />
+          <input type="text" name="nation" value="" />
         </div>
       </div>
 
       <div class="shipping-check">
-        <input type="checkbox" id="shipping" />
+        <input type="checkbox" id="shipping" name="shipping_same_as_billing" value="same_as_billing" />
 
         <label for="shipping"> Shipping address same as billing </label>
       </div>
 
-      <button>Continue</button>
-    </div>
+      <button type="submit">Continue</button>
+
+    </form>
+    
   </body>
 </html>
