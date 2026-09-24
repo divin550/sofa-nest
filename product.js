@@ -144,3 +144,7 @@ cardData.forEach((data) => {
     });
   });
 });
+const checkoutBtn = document.querySelector(".checkout-btn")
+checkoutBtn.addEventListener("click", (e)=>{
+  window.location.href = "checkout.html" 
+})
